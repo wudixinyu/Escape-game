@@ -1,0 +1,5 @@
+﻿failed:  - [safe-delete][SAFE_DELETE_FAIL_CLOSED] {"target":"D:\\Godot_v4.7.2-stable_win64.exe\\卡片游戏\\解脱\\解脱\\tools\\_import.log","reason":"trash-failed","detail":"genie-trash failed; refusing fallback delete: D:\\Godot_v4.7.2-stable_win64.exe\\卡片游戏\\解脱\\解脱\\tools\\_import.log"}
+failed:  - [safe-delete][SAFE_DELETE_FAIL_CLOSED] {"target":"D:\\Godot_v4.7.2-stable_win64.exe\\卡片游戏\\解脱\\解脱\\tools\\_run.log","reason":"trash-failed","detail":"genie-trash failed; refusing fallback delete: D:\\Godot_v4.7.2-stable_win64.exe\\卡片游戏\\解脱\\解脱\\tools\\_run.log"}
+failed:  - [safe-delete][SAFE_DELETE_FAIL_CLOSED] {"target":"D:\\Godot_v4.7.2-stable_win64.exe\\卡片游戏\\解脱\\解脱\\tools\\_snap.log","reason":"trash-failed","detail":"genie-trash failed; refusing fallback delete: D:\\Godot_v4.7.2-stable_win64.exe\\卡片游戏\\解脱\\解脱\\tools\\_snap.log"}
+failed:  - [safe-delete][SAFE_DELETE_FAIL_CLOSED] {"target":"D:\\Godot_v4.7.2-stable_win64.exe\\卡片游戏\\解脱\\解脱\\tools\\_test.log","reason":"trash-failed","detail":"genie-trash failed; refusing fallback delete: D:\\Godot_v4.7.2-stable_win64.exe\\卡片游戏\\解脱\\解脱\\tools\\_test.log"}
+

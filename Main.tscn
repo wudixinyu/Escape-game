@@ -1,0 +1,146 @@
+[gd_scene format=3]
+
+[ext_resource type="Script" path="res://Main.gd" id="1_main"]
+[ext_resource type="Texture2D" path="res://assets/bg/table.png" id="2_bg"]
+
+[node name="Main" type="Control"]
+layout_mode = 3
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+mouse_filter = 2
+script = ExtResource("1_main")
+
+[node name="BG" type="TextureRect" parent="."]
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+mouse_filter = 2
+texture = ExtResource("2_bg")
+expand_mode = 1
+stretch_mode = 6
+
+[node name="Veil" type="ColorRect" parent="."]
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+mouse_filter = 2
+color = Color(0.05, 0.06, 0.09, 0.45)
+
+[node name="Shell" type="VBoxContainer" parent="."]
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+offset_left = 40.0
+offset_top = 28.0
+offset_right = -40.0
+offset_bottom = -28.0
+grow_horizontal = 2
+grow_vertical = 2
+mouse_filter = 2
+theme_override_constants/separation = 14
+
+[node name="TopBar" type="HBoxContainer" parent="Shell"]
+layout_mode = 2
+mouse_filter = 2
+theme_override_constants/separation = 20
+
+[node name="Title" type="Label" parent="Shell/TopBar"]
+layout_mode = 2
+mouse_filter = 2
+theme_override_font_sizes/font_size = 40
+text = "解  脱"
+
+[node name="Divider" type="VSeparator" parent="Shell/TopBar"]
+layout_mode = 2
+
+[node name="LevelLabel" type="Label" parent="Shell/TopBar"]
+layout_mode = 2
+mouse_filter = 2
+theme_override_font_sizes/font_size = 26
+text = "关卡"
+
+[node name="Tags" type="Label" parent="Shell/TopBar"]
+layout_mode = 2
+mouse_filter = 2
+theme_override_colors/font_color = Color(0.62, 0.7, 0.82, 1)
+theme_override_font_sizes/font_size = 17
+vertical_alignment = 1
+text = ""
+
+[node name="TopSpacer" type="Control" parent="Shell/TopBar"]
+layout_mode = 2
+mouse_filter = 2
+size_flags_horizontal = 3
+
+[node name="Stats" type="Label" parent="Shell/TopBar"]
+layout_mode = 2
+mouse_filter = 2
+theme_override_font_sizes/font_size = 20
+text = "步 0"
+
+[node name="HintBar" type="HBoxContainer" parent="Shell"]
+layout_mode = 2
+mouse_filter = 2
+
+[node name="Hint" type="Label" parent="Shell/HintBar"]
+layout_mode = 2
+size_flags_horizontal = 3
+mouse_filter = 2
+theme_override_colors/font_color = Color(0.72, 0.76, 0.86, 1)
+theme_override_font_sizes/font_size = 17
+text = ""
+
+[node name="Table" type="Control" parent="Shell"]
+layout_mode = 2
+size_flags_vertical = 3
+mouse_filter = 2
+custom_minimum_size = Vector2(0, 520)
+
+[node name="BottomBar" type="HBoxContainer" parent="Shell"]
+layout_mode = 2
+mouse_filter = 2
+theme_override_constants/separation = 12
+
+[node name="Home" type="Button" parent="Shell/BottomBar"]
+layout_mode = 2
+text = "主界面"
+
+[node name="Restart" type="Button" parent="Shell/BottomBar"]
+layout_mode = 2
+text = "重  来"
+
+[node name="Prev" type="Button" parent="Shell/BottomBar"]
+layout_mode = 2
+text = "上一关"
+
+[node name="Next" type="Button" parent="Shell/BottomBar"]
+layout_mode = 2
+text = "下一关"
+
+[node name="Levels" type="HBoxContainer" parent="Shell/BottomBar"]
+layout_mode = 2
+mouse_filter = 2
+theme_override_constants/separation = 8
+
+[node name="BottomSpacer" type="Control" parent="Shell/BottomBar"]
+layout_mode = 2
+mouse_filter = 2
+size_flags_horizontal = 3
+
+[node name="Tip" type="Label" parent="Shell/BottomBar"]
+layout_mode = 2
+mouse_filter = 2
+theme_override_colors/font_color = Color(0.5, 0.55, 0.65, 1)
+theme_override_font_sizes/font_size = 16
+vertical_alignment = 1
+text = "只有「可出」的牌能点 · 顺序错了一样会走进死局"
